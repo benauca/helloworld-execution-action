@@ -38,4 +38,4 @@ jobs:
     - name: Log into registry
       run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
     - name: Run Docker image.
-      run: docker run ${{ github.repository }}/hello-world:develop
+      run: docker run docker.pkg.github.com/benauca/hello-world-docker/hello-world:develop
