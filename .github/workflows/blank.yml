@@ -35,3 +35,5 @@ jobs:
     # Run Docker ...
     - name: Start env
       run: docker version
+    - name: Run Docker image.
+      run: docker run ${{ github.repository }}/hello-world:develop
