@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
   pull_request:
     branches: [ master ]
 
@@ -31,3 +31,7 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
+    
+    # Run Docker ...
+    - name: Start env
+    run: docker version
