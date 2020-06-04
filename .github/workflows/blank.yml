@@ -43,7 +43,7 @@ jobs:
       id: hello
       uses: benauca/helloworld-action@develop
       with:
-        DOCKER_USER: ${{ github.actor }}
-        DOCKER_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        username: ${{ github.actor }}
+        password: "${{ secrets.GITHUB_TOKEN }}"
         who-to-greet: 'benauca'
             
