@@ -41,7 +41,7 @@ jobs:
       run: docker run docker.pkg.github.com/benauca/hello-world-docker/hello-world:develop
     - name: Hello world action step
       id: hello
-      uses: benauca/helloworld-action@v1
+      uses: benauca/helloworld-action@develop
       with:
         who-to-greet: 'benauca'
             
