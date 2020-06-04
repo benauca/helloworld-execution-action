@@ -39,6 +39,9 @@ jobs:
       run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
     - name: Run Docker image.
       run: docker run docker.pkg.github.com/benauca/hello-world-docker/hello-world:develop
-    - name: Include benauca/helloworld
-      run:  benauca/helloworld-action@v1
+    - name: Hello world action step
+      id: hello
+      uses: benauca/helloworld-action@v1
+      with:
+        who-to-greet: 'benauca'
             
