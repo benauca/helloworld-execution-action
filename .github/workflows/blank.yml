@@ -23,7 +23,8 @@ jobs:
     #- uses: actions/checkout@v2
     - uses: benauca/action-git@develop
       with:
-        repository: https://github.com/benauca/helloworld-execution-action.git
+        DRONE_REMOTE_URL: https://github.com/benauca/helloworld-execution-action.git
+        DRONE_COMMIT_BRANCH: develop 
         #repository: ${{github.repository}}
 
     # Runs a single command using the runners shell
