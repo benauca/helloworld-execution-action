@@ -22,7 +22,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     #- uses: actions/checkout@v2
     - uses: benauca/action-git@develop
-      with:
+      env:
         DRONE_REMOTE_URL: https://github.com/benauca/helloworld-execution-action.git
         DRONE_COMMIT_BRANCH: develop 
         #repository: ${{github.repository}}
